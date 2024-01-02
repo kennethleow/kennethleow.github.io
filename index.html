@@ -1,326 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Kenneth Leow</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#services" class="w3-bar-item w3-button">Services</a>
-        <a href="#pricing" class="w3-bar-item w3-button">Pricing</a>
-      </div>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
-  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PORTFOLIO</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-</div>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/director.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Director</h3>
-      <p><b>Kenneth Leow</b></p>
-      <p><a href="#contact" class="w3-button w3-black w3-padding-large w3-large">GET IN TOUCH</a></p>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/on-set-1.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>The Opening Shot</h3>
-      <p><b>The set of most important shot of the short film</b></p>    
-      <p><a href="#contact" class="w3-button w3-black w3-padding-large w3-large">GET IN TOUCH</a></p>
-    </div>
-  </div>
-    <div class="mySlides w3-display-container w3-center">
-        <img src="images/on-set-2.jpg" style="width:100%">
-        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-          <h3>Framing</h3>
-          <p><b>Making sure we get our shot and lighting correct</b></p>    
-          <p><a href="#contact" class="w3-button w3-black w3-padding-large w3-large">GET IN TOUCH</a></p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nevo — The Creative Template</title>
+    <meta content="The main homepage" name="description">
+    <!-- Styles-->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/custom.css">
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header-->
+      <header class="header"><a class="brand" href="index.html"><img class="default" alt="Nevo example image" src="assets/images/logo.svg"><img class="white" alt="Nevo example image" src="assets/images/logo-white.svg"></a>
+        <!-- Navigation-->
+        <ul class="menu main">
+          <li class="menu-item has-dropdown"><a class="menu-link" href="index.html">Home</a>
+            <!-- Dropdown-->
+            <ul class="dropdown-nav">
+              <li class="menu-item"><a class="menu-link" href="index.html">Studio</a></li>
+              <li class="menu-item"><a class="menu-link" href="index-freelancer.html">Freelancer</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-dropdown"><a class="menu-link" href="pages/about-studio.html">About</a>
+            <!-- Dropdown-->
+            <ul class="dropdown-nav">
+              <li class="menu-item"><a class="menu-link" href="pages/about-studio.html">Studio</a></li>
+              <li class="menu-item"><a class="menu-link" href="pages/about-freelancer.html">Freelancer</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-dropdown"><a class="menu-link" href="pages/elements.html">Features</a>
+            <!-- Dropdown-->
+            <ul class="dropdown-nav">
+              <li class="menu-item"><a class="menu-link" href="pages/elements.html">Elements</a></li>
+              <li class="menu-item"><a class="menu-link" href="pages/alt-menu.html">Alternative Menu</a></li>
+              <li class="menu-item"><a class="menu-link" href="pages/one-pager.html">One-page website</a></li>
+              <li class="menu-item"><a class="menu-link" href="pages/error.html">Error page</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-dropdown"><a class="menu-link" href="pages/portfolio-default.html">Portfolio</a>
+            <!-- Dropdown-->
+            <ul class="dropdown-nav">
+              <li class="menu-item"><a class="menu-link" href="pages/portfolio-default.html">Default</a></li>
+              <li class="menu-item"><a class="menu-link" href="pages/portfolio-lightbox.html">Lightbox</a></li>
+              <li class="menu-item"><a class="menu-link" href="pages/portfolio-masonry.html">Masonry</a></li>
+              <li class="menu-item"><a class="menu-link" href="pages/portfolio-no-space.html">No-space</a></li>
+              <li class="menu-item"><a class="menu-link" href="pages/portfolio-random-space.html">Random-space</a></li>
+              <li class="menu-item"><a class="menu-link" href="pages/portfolio-filters.html">Filterable</a></li>
+              <li class="menu-item"><a class="menu-link" href="pages/project-single-harrys.html">Single Project</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-dropdown"><a class="menu-link" href="pages/blog.html">Blog</a>
+            <!-- Dropdown-->
+            <ul class="dropdown-nav">
+              <li class="menu-item"><a class="menu-link" href="pages/blog.html">Blog</a></li>
+              <li class="menu-item"><a class="menu-link" href="pages/blog-single.html">Single post</a></li>
+              <li class="menu-item"></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a class="menu-link" href="pages/contact.html">Contact</a></li>
+        </ul>
+        <!-- About section-->
+        <div class="menu about">
+          <p>My goal is to make the digital world more beautiful. I believe that true craftmanship stands out with passion.</p>
         </div>
-    </div>    
-    <div class="mySlides w3-display-container w3-center">
-        <img src="images/centerpiece.jpg" style="width:100%">
-        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-          <h3>The Center Piece</h3>
-          <p><b>The scene where the struggles of our story begin</b></p>    
-          <p><a href="#contact" class="w3-button w3-black w3-padding-large w3-large">GET IN TOUCH</a></p>
-        </div>
-    </div>    
-    <div class="mySlides w3-display-container w3-center">
-    <img src="images/breaktime.jpg" style="width:100%">
-        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>Winding Down</h3>
-        <p><b>Never forget to take a break</b></p>   
-        <p><a href="#contact" class="w3-button w3-black w3-padding-large w3-large">GET IN TOUCH</a></p> 
-        </div>
-    </div>
-  </div>
-
-  <!-- The About Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
-    <h2 class="w3-wide">ABOUT</h2>
-    <p class="w3-opacity"><i>Storytelling Is Key</i></p>
-    <p class="w3-justify">
-        The key to a great film or production is great storytelling. That is what we do here. We are proud to showcase our talents in the form of visual arts, as well as the impact of a well written story.
-    </p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>.</p>
-        <p class="w3-opacity"><i>.</i></p>
-        <img src="images/kenneth.jpg" class="w3-round w3-margin-bottom" alt="Kenneth Leow" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Kenneth Leow</p>
-        <p class="w3-opacity"><i>Producer, Director</i></p>
-        <img src="images/kenneth.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>.</p>
-        <p class="w3-opacity"><i>.</i></p>
-        <img src="images/kenneth.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
-    </div>
-  </div>
-
-  <!-- The Videos Section -->
-  <div class="w3-black" id="portfolio">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">VIDEOS</h2>
-      <p class="w3-opacity w3-center"><i>Check out some of our past works</i></p><br>
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/spelling-thumb.jpg" alt="spelling video thumbnail" style="width:100%" class="w3-hover-opacity" href="https://youtu.be/SfDE8r3U9AM">
-          <div class="w3-container w3-white">
-            <p><b>Spelling</b></p>
-            <p class="w3-opacity">12 Nov 2019</p>
-            <p>This is a story about a boy who wants to make his mother proud. He wants to overcome his own disability in order to not further burden his family.</p>
-            <a href="https://youtu.be/SfDE8r3U9AM" target="_blank"><button class="w3-button w3-black w3-margin-bottom">Watch Now</button></a>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/nothinglasts-thumb.jpg" alt="nothinglaststhumb" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Nothing Lasts Forever</b></p>
-            <p class="w3-opacity">2 Nov 2016</p>
-            <p>The music video for Nothing Lasts Forever. Shot in Melbourne, Australia by the wonderful Julian Tay. Watch to enjoy the visuals and music!</p>
-            <a href="https://youtu.be/7yWmDyY4--A" target="_blank"><button class="w3-button w3-black w3-margin-bottom">Watch Now</button></a>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/spelling-thumb.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Coming Soon</b></p>
-            <p class="w3-opacity">11 May 2020</p>
-            <p>We are still figuring out what videos to feature here. Hang in there!</p>
-            <button class="w3-button w3-black w3-margin-bottom">Watch Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- The Services Section -->
-  <div class="w3-white" id="services">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">SERVICES</h2>
-      <p class="w3-opacity w3-center"><i>Here's how we can help</i></p><br>
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/directing.jpg" alt="director directing thumbnail" style="width:100%" class="w3-hover-opacity" href="https://youtu.be/SfDE8r3U9AM">
-          <div class="w3-container w3-black">
-            <p><b>Producing & Directing</b></p>
-            <p class="w3-opacity">Film & Social Videos</p>
-            <p>Need a captain for your ship? We will steer your video in the right direction. You don't just plant and roll a camera, then call for action. You need to be able to communicate your message through your cast and talents! (...and, cut!)</p>
-            <a href="#contact"><button class="w3-button w3-white w3-margin-bottom">Get in touch</button></a>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/production.jpg" alt="production thumbnail" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-black">
-            <p><b>Production</b></p>
-            <p class="w3-opacity">Pre-Pro</p>
-            <p>Don't know how to start? Let us help you plan! From scripting, storyboarding, casting, all the way down to getting your coffee (or tea, of course) we will visualise your imagination and, within budget! What are you waiting for? Get in touch!</p>
-            <a href="#contact"><button class="w3-button w3-white w3-margin-bottom">Get in touch</button></a>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/spelling-thumb.jpg" alt="editing thumbnail" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-black">
-            <p><b>Post Production</b></p>
-            <p class="w3-opacity">Online & Offline</p>
-            <p>Taken all the beautiful shots for your project, but have no idea where to start editing? Whether it is a personal or client project, we providing quick post production solutions that will cater to all your needs. Get in touch with us to find out more!</p>
-            <a href="contact"></a><button class="w3-button w3-white w3-margin-bottom">Get in touch</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- The Pricing Section -->
-  <div class="w3-black" id="pricing">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">PRICING</h2>
-      <p class="w3-opacity w3-center"><i>Everything is negotiable</i></p><br>
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/directing.jpg" alt="director directing thumbnail" style="width:100%" class="w3-hover-opacity" href="https://youtu.be/SfDE8r3U9AM">
-          <div class="w3-container w3-white">
-            <p><b>Producing & Directing</b></p>
-            <p class="w3-opacity">Film & Social Videos</p>
-            <p>Need a captain for your ship? We will steer your video in the right direction. You don't just plant and roll a camera, then call for action. You need to be able to communicate your message through your cast and talents! (...and, cut!)</p>
-            <a href="#contact"><button class="w3-button w3-black w3-margin-bottom">Get a quote</button></a>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/production.jpg" alt="production thumbnail" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Production</b></p>
-            <p class="w3-opacity">Pre-Pro</p>
-            <p>Don't know how to start? Let us help you plan! From scripting, storyboarding, casting, all the way down to getting your coffee (or tea, of course) we will visualise your imagination and, within budget! What are you waiting for? Get in touch!</p>
-            <a href="#contact"><button class="w3-button w3-black w3-margin-bottom">Get a quote</button></a>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/spelling-thumb.jpg" alt="editing thumbnail" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Post Production</b></p>
-            <p class="w3-opacity">Online & Offline</p>
-            <p>Taken all the beautiful shots for your project, but have no idea where to start editing? Whether it is a personal or client project, we providing quick post production solutions that will cater to all your needs. Get in touch with us to find out more!</p>
-            <a href="#contact"><button class="w3-button w3-black w3-margin-bottom">Get a quote</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+        <!-- Social Navigation-->
+        <ul class="menu social">
+          <li class="menu-item"><a class="menu-link anchor-link" href="#">Instagram</a></li>
+          <li class="menu-item"><a class="menu-link anchor-link" href="#">Behance</a></li>
+          <li class="menu-item"><a class="menu-link anchor-link" href="#">Twitter</a></li>
+        </ul>
       </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      <!-- Burger menu-->
+      <div class="burger">
+        <hr>
+        <hr>
+        <hr>
       </div>
-    </div>
-  </div>
-
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Book a session? Reach out below!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> PETALING JAYA, SELANGOR, MALAYSIA<br>
-        <i class="fa fa-whatsapp" style="width:30px"></i> Phone/WhatsApp: <a href="https://api.whatsapp.com/send?phone=+60167527747" target="_blank">(+60) 016 752 7747</a><br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: <a href="mailto:kenneth.z.leow@gmail.com" target="_blank">kenneth.z.leow@gmail.com</a><br>
+      <div class="content">
+        <section class="nevo-slider halfscreen">
+          <div class="slides">
+            <div class="slide color-bg-2"><img class="background" src="assets/images/backgrounds/5.png">
+              <div class="container">
+                <div class="grid vcenter">
+                  <div class="inner">
+                    <h1><span class="animated-text">We make <br>things </span><span class="typed color-text-1"></span>
+                      <div class="typed-content">
+                        <div class="sentence">vibrant.</div>
+                        <div class="sentence">beautiful.</div>
+                        <div class="sentence">dope!</div>
+                      </div>
+                    </h1><a class="button primary" href="pages/portfolio-random-space.html">See. Believe.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide light-text background-zoom"><img class="background" src="assets/images/backgrounds/4.jpg">
+              <div class="container">
+                <div class="grid vcenter">
+                  <div class="inner">
+                    <h1 class="animated-text">Projects.</h1>
+                    <h4>We nail them.</h4><a class="button tertiairy" href="pages/portfolio-random-space.html">View work</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide light-text black-bg">
+              <div class="background">
+                <video class="opacity-5" loop poster="assets/videos/video_01.jpg">
+                  <source src="assets/videos/video_01.mp4" type="video/mp4">
+                  <source src="assets/videos/video_01.webm" type="video/webm">
+                </video>
+              </div>
+              <div class="container">
+                <div class="grid center text-center">
+                  <div class="inner">
+                    <h4>No audience?</h4>
+                    <h1 class="animated-text">We hear you.</h1><a class="button tertiairy" href="pages/contact.html">Get in touch</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-size-1">
+          <div class="container">
+            <div class="grid vcenter">
+              <div class="column-6">
+                <h5>Selected work</h5>
+              </div>
+              <div class="column-6">
+                <ul class="grid-filters text-right" data-target="grid">
+                  <li><a class="button link filter" href="#" data-filter="*">All</a></li>
+                  <li><a class="button link filter" href="#" data-filter=".design">Design</a></li>
+                  <li><a class="button link filter" href="#" data-filter=".branding">Branding</a></li>
+                  <li><a class="button link filter" href="#" data-filter=".packaging">Packaging</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid masonry columns-3 columns-tablet-2" id="grid">
+              <div class="grid-sizer"></div>
+              <div class="grid-item column branding"><a class="thumb space-2 animated" href="pages/project-single-logos.html"><img alt="Nevo example image" src="assets/images/work/va-academy/5.jpg"/>
+                  <div class="labels">branding</div>
+                  <div class="caption"> 
+                    <div class="title">Internation Academy</div>
+                    <div class="sub">Identity Design</div>
+                  </div></a></div>
+              <div class="grid-item column design"><a class="thumb space-2 animated" href="pages/project-single-logos.html"><img alt="Nevo example image" src="assets/images/work/logos/3.jpg"/>
+                  <div class="labels">design</div>
+                  <div class="caption"> 
+                    <div class="title">Collect</div>
+                    <div class="sub">Logo selection</div>
+                  </div></a></div>
+              <div class="grid-item column branding"><a class="thumb space-2 animated" href="pages/project-single-logos.html"><img alt="Nevo example image" src="assets/images/work/full-moon/7.jpg"/>
+                  <div class="labels">branding</div>
+                  <div class="caption"> 
+                    <div class="title">Untold</div>
+                    <div class="sub">Branding</div>
+                  </div></a></div>
+              <div class="grid-item column design"><a class="thumb space-2 animated" href="pages/project-single-hopscotch.html"><img alt="Nevo example image" src="assets/images/work/sequential/1.jpg"/>
+                  <div class="labels">design</div>
+                  <div class="caption"> 
+                    <div class="title">Sequential</div>
+                    <div class="sub">Magazine</div>
+                  </div></a></div>
+              <div class="grid-item column photography"><a class="thumb space-2 animated" href="pages/project-single-logos.html"><img alt="Nevo example image" src="assets/images/blog/1.jpg"/>
+                  <div class="labels">photography</div>
+                  <div class="caption"> 
+                    <div class="title">Tropical Thunder</div>
+                    <div class="sub">Photography</div>
+                  </div></a></div>
+              <div class="grid-item column packaging branding"><a class="thumb space-2 animated" href="pages/project-single-harrys.html"><img alt="Nevo example image" src="assets/images/work/harrys-2/17.jpg"/>
+                  <div class="labels">packaging branding</div>
+                  <div class="caption"> 
+                    <div class="title">Harry's</div>
+                    <div class="sub">Work selection</div>
+                  </div></a></div>
+              <div class="grid-item column branding"><a class="thumb space-2 animated" href="pages/project-single-logos.html"><img alt="Nevo example image" src="assets/images/work/logos/18.jpg"/>
+                  <div class="labels">branding</div>
+                  <div class="caption"> 
+                    <div class="title">Farber Law</div>
+                    <div class="sub">Work selection</div>
+                  </div></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="section-size-2 lighter-bg">
+          <div class="container">
+            <div class="grid">
+              <div class="column-12 text-center text-left-mobile animated-text">
+                <h2>It's true.</h2>
+                <h5 class="grey-text">Small things make you big.</h5>
+                <div class="space-3"></div>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="column-12 image"><img alt="Nevo example image" src="assets/images/blog/9.jpg"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="space-4"></div>
+            <div class="grid center text-center">
+              <div class="column-6">
+                <p class="font-size-3 grey-text">We're a team of experts, striving long term solutions. We think big and take on every challenge that comes across our path.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-size-2 black-bg light-text" id="team">
+          <div class="container">
+            <div class="grid">
+              <div class="column-12 text-center animated-text">
+                <h5 class="grey-text">Your project</h5>
+                <h2>In the best possible hands</h2>
+                <div class="space-3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="container pad-3">
+            <div class="grid masonry columns-3">
+              <div class="grid-item column undefined">
+                <div class="thumb"><img alt="Nevo example image" src="assets/images/team/1.jpg"/>
+                  <ul class="labels">
+                    <li><a class="button anchor-link primary" href="#">Twitter</a></li>
+                    <li><a class="button anchor-link primary" href="#">Instagram</a></li>
+                    <li><a class="button anchor-link primary" href="#">Behance</a></li>
+                  </ul>
+                  <div class="caption">
+                    <h5 class="title">Herald Johnson</h5>
+                    <h6 class="sub">Backend</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item column undefined">
+                <div class="thumb"><img alt="Nevo example image" src="assets/images/team/1b.jpg"/>
+                  <ul class="labels">
+                    <li><a class="button anchor-link primary" href="#">Twitter</a></li>
+                    <li><a class="button anchor-link primary" href="#">Instagram</a></li>
+                    <li><a class="button anchor-link primary" href="#">Behance</a></li>
+                  </ul>
+                  <div class="caption">
+                    <h5 class="title">Jake Thompson</h5>
+                    <h6 class="sub">UX Design</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item column undefined">
+                <div class="thumb"><img alt="Nevo example image" src="assets/images/team/2.jpg"/>
+                  <ul class="labels">
+                    <li><a class="button anchor-link primary" href="#">Twitter</a></li>
+                    <li><a class="button anchor-link primary" href="#">Instagram</a></li>
+                    <li><a class="button anchor-link primary" href="#">Behance</a></li>
+                  </ul>
+                  <div class="caption">
+                    <h5 class="title">Tobias Dupré</h5>
+                    <h6 class="sub">Illustration</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item column undefined">
+                <div class="thumb"><img alt="Nevo example image" src="assets/images/team/2b.jpg"/>
+                  <ul class="labels">
+                    <li><a class="button anchor-link primary" href="#">Twitter</a></li>
+                    <li><a class="button anchor-link primary" href="#">Instagram</a></li>
+                    <li><a class="button anchor-link primary" href="#">Behance</a></li>
+                  </ul>
+                  <div class="caption">
+                    <h5 class="title">Liam Kim</h5>
+                    <h6 class="sub">Frontend</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item column undefined">
+                <div class="thumb"><img alt="Nevo example image" src="assets/images/team/3b.jpg"/>
+                  <ul class="labels">
+                    <li><a class="button anchor-link primary" href="#">Twitter</a></li>
+                    <li><a class="button anchor-link primary" href="#">Instagram</a></li>
+                    <li><a class="button anchor-link primary" href="#">Behance</a></li>
+                  </ul>
+                  <div class="caption">
+                    <h5 class="title">Ronald Duncan</h5>
+                    <h6 class="sub">Photography</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item column undefined">
+                <div class="thumb"><img alt="Nevo example image" src="assets/images/team/3.jpg"/>
+                  <ul class="labels">
+                    <li><a class="button anchor-link primary" href="#">Twitter</a></li>
+                    <li><a class="button anchor-link primary" href="#">Instagram</a></li>
+                    <li><a class="button anchor-link primary" href="#">Behance</a></li>
+                  </ul>
+                  <div class="caption">
+                    <h5 class="title">Lin Becker</h5>
+                    <h6 class="sub">Marketing</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="space-3"></div>
+            <div class="grid">
+              <div class="column-3 centered text-center animated grey-text">
+                <p>We're a team of skilled individuals, always striving for the best solution. We think big, and make clients successful.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-size-2 lighter-bg">
+          <div class="container">
+            <div class="grid animated">
+              <div class="column-3 column-tablet-6 column-mobile-12">
+                <h5>Interviews</h5>
+                <ul class="list">
+                  <li>The New York Times</li>
+                  <li>Boston Herald</li>
+                  <li>Bloomberg</li>
+                  <li>Computer Science</li>
+                </ul>
+              </div>
+              <div class="column-3 column-tablet-6 column-mobile-12">
+                <h5>Awards</h5>
+                <ul class="list">
+                  <li>Red Dot Award 2018</li>
+                  <li>Golden Design 2017</li>
+                  <li>Red Dot Award 2017</li>
+                  <li>Rams Winner 2016</li>
+                </ul>
+              </div>
+              <div class="column-3 column-tablet-6 column-mobile-12">
+                <h5>Publications</h5>
+                <ul class="list">
+                  <li>The New York Times</li>
+                  <li>Digital Mag</li>
+                  <li>Online.com</li>
+                  <li>Digital Heroes</li>
+                </ul>
+              </div>
+              <div class="column-3 column-tablet-6 column-mobile-12">
+                <h5>Nominations</h5>
+                <ul class="list">
+                  <li>Red Dot Award 2018</li>
+                  <li>Golden Design Nominee</li>
+                  <li>Red Dot Award 2017</li>
+                  <li>Rams Winner 2016</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-size-2">
+          <div class="container">
+            <div class="grid">
+              <div class="column text-center centered text-left-mobile">
+                <h5 class="animated-text">The folks we work with</h5>
+                <div class="space-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="container width-5">
+            <div class="grid columns-5 columns-mobile-2 centered animated">
+              <div class="column image pad-1"><img alt="Nevo example image" src="assets/images/brands/1.png"></div>
+              <div class="column image pad-1"><img alt="Nevo example image" src="assets/images/brands/2.png"></div>
+              <div class="column image pad-1"><img alt="Nevo example image" src="assets/images/brands/3.png"></div>
+              <div class="column image pad-1"><img alt="Nevo example image" src="assets/images/brands/4.png"></div>
+              <div class="column image pad-1"><img alt="Nevo example image" src="assets/images/brands/5.png"></div>
+              <div class="column image pad-1"><img alt="Nevo example image" src="assets/images/brands/6.png"></div>
+              <div class="column image pad-1"><img alt="Nevo example image" src="assets/images/brands/7.png"></div>
+              <div class="column image pad-1"><img alt="Nevo example image" src="assets/images/brands/10.png"></div>
+              <div class="column image pad-1"><img alt="Nevo example image" src="assets/images/brands/9.png"></div>
+              <div class="column image pad-1"><img alt="Nevo example image" src="assets/images/brands/8.png"></div>
+            </div>
+          </div>
+        </section>
       </div>
+      <!-- Footer-->
+      <footer class="footer section-size-1 border-top"><a class="button primary" href="https://themeforest.net/item/nevo-creative-pro-agency-studio-template/22853378" target="_blank">Buy Nevo</a>
+        <div class="font-size-1"> <span>Built by </span><span> <a href="https://themevillain.com" target="_blank">ThemeVillain</a></span>
+          <div>&copy; 2019</div>
+        </div>
+      </footer>
     </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
-
-<!-- Image of location/map -->
-<img src="images/footerphoto.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <a href="https://www.facebook.com/kennethzleow" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-  <a href="https://www.instagram.com/kennethzleow" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-  <a href="https://www.youtube.com/kennethleow" target="_blank"><i class="fa fa-youtube w3-hover-opacity"></i></a>
-  <p class="w3-medium">Photo Credits: <a href="https://www.instagram.com/johnpsd" target="_blank">John Solomon</a> • Copyright &copy; 2020 <a href="https://www.kennethleow.com" target="_blank">Kenneth Leow</a></p>
-</footer>
-
-<script>
-// Automatic Slideshow - change image every 5 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 5000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
-</body>
+    <!-- Scripts-->
+    <!-- Core-->
+    <script src="assets/scripts/core.jquery.js"></script>
+    <!-- Vendor Plugins-->
+    <script src="assets/scripts/plugin.imagesloaded.pkgd.js"></script>
+    <script src="assets/scripts/plugin.in-viewport.js"></script>
+    <script src="assets/scripts/plugin.animate.js"></script>
+    <script src="assets/scripts/plugin.isotope.pkgd.min.js"></script>
+    <script src="assets/scripts/plugin.ScrollToPlugin.min.js"></script>
+    <script src="assets/scripts/plugin.SplitText.js"></script>
+    <script src="assets/scripts/plugin.TweenMax.min.js"></script>
+    <script src="assets/scripts/plugin.touchSwipe.min.js"></script>
+    <script src="assets/scripts/plugin.typed.min.js"></script>
+    <!-- Plugins-->
+    <script src="assets/plugins/nevo-slider/nevo-slider.js"></script>
+    <script src="assets/plugins/nevo-lightbox/nevo-lightbox.js"></script>
+    <script src="assets/scripts/main.functions.js"></script>
+  </body>
 </html>
-
-<!--  Add this back if needed - HTML Form for Contacting
-<div class="w3-col m6">
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-        <div class="w3-half">
-          <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-        </div>
-        <div class="w3-half">
-          <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-        </div>
-      </div>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
-      <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-      <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-    </form>
-</div>
--->

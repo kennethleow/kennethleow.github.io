@@ -1,6 +1,6 @@
 <?php
 
-    $EmailFrom = "email@example.com"; // The from address
+    $EmailFrom = "hello@kennethleow.com"; // The from address
     $EmailTo = "hello@kennethleow.com"; // The recipient address (your own email address)
     $Subject = "Curious Customer Alert"; // Shows as your email subject, change this for your own purposes
     $Name = Trim(stripslashes($_POST['Name'])); 

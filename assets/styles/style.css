@@ -4507,7 +4507,7 @@ form textarea {
 }
 
 .color-text-1, .color-text-1 * {
-  color: #ff9380;
+  color: #ff9380 !important;
 }
 
 .color-text-2, .color-text-2 * {

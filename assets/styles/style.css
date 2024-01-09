@@ -4507,11 +4507,11 @@ form textarea {
 }
 
 .color-text-1, .color-text-1 * {
-  color: #ff9380 !important;
+  color: #ff9380;
 }
 
 .color-text-2, .color-text-2 * {
-  color: #ffebe0;
+  color: #ffebe0 !important;
 }
 
 .border-top {

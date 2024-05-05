@@ -392,46 +392,87 @@ table {
 }
 
 /* Includes */
-@font-face {
-  font-family: 'hk-carta';
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/hk-carta/HKCarta-Regular.woff2) format("woff2"), url(../fonts/hk-carta/HKCarta-Regular.woff) format("woff"), url(../fonts/hk-carta/HKCarta-Regular.eot) format("eot");
 }
 
-@font-face {
-  font-family: 'hk-nova';
-  font-style: normal;
-  font-weight: 500;
-  src: url(../fonts/hk-nova/HKNova-Medium.woff2) format("woff2"), url(../fonts/hk-nova/HKNova-Medium.woff) format("woff"), url(../fonts/hk-nova/HKNova-Medium.eot) format("eot");
-}
-
-@font-face {
-  font-family: 'hk-grotesk';
-  font-style: normal;
+.roboto-light {
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
-  src: url(../fonts/hk-grotesk/HKGrotesk-Light.woff2) format("woff2"), url(../fonts/hk-grotesk/HKGrotesk-Light.woff) format("woff"), url(../fonts/hk-grotesk/HKGrotesk-Light.eot) format("eot");
+  font-style: normal;
 }
 
-@font-face {
-  font-family: 'hk-grotesk';
-  font-style: normal;
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  src: url(../fonts/hk-grotesk/HKGrotesk-Regular.woff2) format("woff2"), url(../fonts/hk-grotesk/HKGrotesk-Regular.woff) format("woff"), url(../fonts/hk-grotesk/HKGrotesk-Regular.eot) format("eot");
+  font-style: normal;
 }
 
-@font-face {
-  font-family: 'hk-grotesk';
-  font-style: normal;
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  src: url(../fonts/hk-grotesk/HKGrotesk-SemiBold.woff2) format("woff2"), url(../fonts/hk-grotesk/HKGrotesk-SemiBold.woff) format("woff"), url(../fonts/hk-grotesk/HKGrotesk-SemiBold.eot) format("eot");
+  font-style: normal;
 }
 
-@font-face {
-  font-family: 'hk-grotesk';
-  font-style: normal;
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  src: url(../fonts/hk-grotesk/HKGrotesk-Bold.woff2) format("woff2"), url(../fonts/hk-grotesk/HKGrotesk-Bold.woff) format("woff"), url(../fonts/hk-grotesk/HKGrotesk-Bold.eot) format("eot");
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.hanken-grotesk-regular {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .grid {
@@ -942,7 +983,7 @@ html {
 }
 
 body {
-  font-family: "hk-grotesk", sans-serif, sans-serif;
+  font-family: "Hanken Grotesk", sans-serif, sans-serif;
   font-size: 1em;
   line-height: 1.6em;
 }
@@ -965,7 +1006,7 @@ h1, .h1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   letter-spacing: -0.2rem;
-  font-family: "hk-nova", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h2, .h2 {
@@ -974,7 +1015,7 @@ h2, .h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   letter-spacing: -0.05rem;
-  font-family: "hk-grotesk", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 h3, .h3 {
@@ -983,7 +1024,7 @@ h3, .h3 {
   margin-top: 2rem;
   margin-bottom: .65rem;
   letter-spacing: -0.03rem;
-  font-family: "hk-nova", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h4, .h4 {
@@ -1000,7 +1041,7 @@ h5, .h5 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   letter-spacing: -0.05rem;
-  font-family: "hk-nova", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h6, .h6 {
@@ -1050,7 +1091,7 @@ p:last-child {
 blockquote {
   padding: 2rem;
   font-size: 1.6rem;
-  font-family: "hk-nova", serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.3;
   position: relative;
 }
@@ -1105,7 +1146,7 @@ i {
 }
 
 .sans {
-  font-family: "hk-grotesk", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 .caps {
@@ -1118,7 +1159,7 @@ i {
 }
 
 .cursive {
-  font-family: "hk-grotesk", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 a {
@@ -1166,7 +1207,7 @@ html, body {
   height: 100%;
   margin: 0;
   color: #46474e;
-  font-family: "hk-grotesk", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 html {
@@ -1315,7 +1356,7 @@ html.loaded:before, html.loaded:after {
   transition: color .3s, padding .6s, font-size .3s;
   font-weight: 400;
   font-size: 1rem;
-  font-family: "hk-nova", serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
@@ -1575,7 +1616,7 @@ a#to-top hr:last-child {
 .thumb .caption .title {
   font-size: 1.25rem;
   color: white;
-  font-family: "hk-nova", serif;
+  font-family: "Roboto", sans-serif;
   transition-delay: 0s;
   display: inline-block;
 }
@@ -1979,7 +2020,7 @@ header.header, .burger {
     padding: 0 2rem;
     align-items: center;
     justify-content: center;
-    font-family: "hk-nova", serif;
+    font-family: "Roboto", sans-serif;
     font-size: .8rem;
   }
   .menu.main {
@@ -2087,7 +2128,7 @@ header.header, .burger {
   body.nav-alt .menu.main {
     font-size: 8vh;
     text-align: center;
-    font-family: "hk-nova", serif;
+    font-family: "Roboto", sans-serif;
   }
   body.nav-alt .menu.main .menu-link {
     margin: 0;
@@ -2112,7 +2153,7 @@ header.header, .burger {
     position: fixed;
     top: 0;
     left: 0;
-    font-family: "hk-grotesk", sans-serif;
+    font-family: "Hanken Grotesk", sans-serif;
     font-size: 1.3rem;
     line-height: 1.5;
     margin: 2.5rem;
@@ -2125,7 +2166,7 @@ header.header, .burger {
     top: 1rem;
     text-align: right;
     font-size: 1rem;
-    font-family: "hk-nova", serif;
+    font-family: "Roboto", sans-serif;
   }
   body.nav-alt.menu-opened header.header {
     height: 100vh;
@@ -2195,7 +2236,7 @@ header.header, .burger {
     opacity: 0;
     transform: translateY(-20px);
     transition: all .3s;
-    font-family: "hk-nova", serif;
+    font-family: "Roboto", sans-serif;
   }
   .menu .menu-item a {
     border: 0 !important;
@@ -2264,7 +2305,7 @@ header.header, .burger {
 
 .menu.about {
   font-size: .8em;
-  font-family: "hk-grotesk", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   max-width: 350px;
 }
 
@@ -2278,7 +2319,7 @@ ul.grid-filters a {
   margin-top: 0;
   margin-bottom: 0;
   padding: 1.5rem .75rem !important;
-  font-family: "hk-nova", serif;
+  font-family: "Roboto", sans-serif;
   font-size: .65rem;
 }
 
@@ -2353,7 +2394,7 @@ ul.grid-filters li:last-child a {
   position: relative;
   padding: 5rem 2rem;
   border: 0;
-  font-family: "hk-nova", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .post-navigation a.post-navigation-link:nth-child(1) {
@@ -2367,7 +2408,7 @@ ul.grid-filters li:last-child a {
 
 .post-navigation a.post-navigation-link .sub {
   font-size: 1rem;
-  font-family: "hk-grotesk", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 .post-navigation a.post-navigation-link img {
@@ -2402,7 +2443,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   height: 10rem;
-  font-family: "hk-nova", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 footer > * {
@@ -2427,7 +2468,7 @@ form input, form textarea {
   background: #f7f7f7;
   border-bottom: 1px solid #eaeaee;
   border-radius: 0;
-  font-family: "hk-grotesk", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   font-size: .8rem;
   -webkit-appearance: none !important;
 }
